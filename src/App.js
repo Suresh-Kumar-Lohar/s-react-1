@@ -43,27 +43,6 @@ const App = () => {
           LocationOfExpenditure={item.LocationOfExpenditure}
         />
       ))}
-      {/* <ExpenseItem
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-        LocationOfExpenditure={expenses[0].LocationOfExpenditure}
-      />
-      <ExpenseItem
-        title={expenses[1].title}
-        amount={expenses[1].amount}
-        date={expenses[1].date}
-      />
-      <ExpenseItem
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-      />
-      <ExpenseItem
-        title={expenses[0].title}
-        amount={expenses[0].amount}
-        date={expenses[0].date}
-      /> */}
     </div>
   )
 }
