@@ -10,12 +10,28 @@ input {
   width: 200px;
   padding: 3px;
 }
-button {
+.btn {
   width: 200px;
-  background: rgb(120, 104, 134);
+  display: flex;
+  justify-content: center;
+}
+.button1 {
+  width: 80px;
+  background: rgb(149, 99, 190);
   color: white;
   padding: 3px;
-  margin-top: 4px;
+  margin: 4px;
+  border-style: none;
+}
+.button2 {
+  width: 200px;
+  background: rgb(149, 99, 190);
+  color: white;
+  padding: 15px;
+  margin: 20px;
+  border-style: none;
+  border-radius: 5px;
+  font-weight: bold;
 }
 .center {
   display: flex;
