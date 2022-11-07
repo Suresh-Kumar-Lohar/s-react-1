@@ -1,0 +1,23 @@
+form {
+  margin: 20px;
+}
+label {
+  color: white;
+}
+input {
+  display: block;
+  background: rgb(224, 219, 219);
+  width: 200px;
+  padding: 3px;
+}
+button {
+  width: 200px;
+  background: rgb(120, 104, 134);
+  color: white;
+  padding: 3px;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  background: rgb(116, 68, 80);
+}
