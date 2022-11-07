@@ -3,13 +3,15 @@ import Card from '../UI/Card'
 import './NewExpense.css'
 
 const NewExpense = () => {
-  const [title, setTitle] = useState('')
-  const [amount, setAmount] = useState('')
-  const [date, setDate] = useState('')
+  const [enteredTitle, setEnteredTitle] = useState('')
+  const [enteredAmount, setEnteredAmount] = useState('')
+  const [enteredDate, setEnteredDate] = useState('')
 
   const clickHandler = (e) => {
     e.preventDefault()
-    console.log(title, amount, date)
+    console.log('title : ', enteredTitle)
+    console.log('amount : ', enteredAmount)
+    console.log('date : ', enteredDate)
   }
 
   return (
@@ -20,7 +22,7 @@ const NewExpense = () => {
           <input
             type='text'
             onChange={(e) => {
-              setTitle(e.target.value)
+              setEnteredTitle(e.target.value)
             }}
           />
         </div>
@@ -30,7 +32,7 @@ const NewExpense = () => {
             type='number'
             min='1'
             onChange={(e) => {
-              setAmount(e.target.value)
+              setEnteredAmount(e.target.value)
             }}
           />
         </div>
@@ -39,7 +41,7 @@ const NewExpense = () => {
           <input
             type='date'
             onChange={(e) => {
-              setDate(e.target.value)
+              setEnteredDate(e.target.value)
             }}
           />
         </div>
