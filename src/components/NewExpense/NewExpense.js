@@ -7,16 +7,20 @@ const NewExpense = () => {
   const [enteredAmount, setEnteredAmount] = useState('')
   const [enteredDate, setEnteredDate] = useState('')
 
-  const clickHandler = (e) => {
+  const submitHandler = (e) => {
     e.preventDefault()
-    console.log('title : ', enteredTitle)
-    console.log('amount : ', enteredAmount)
-    console.log('date : ', enteredDate)
+
+    const expenseData = {
+      title: enteredTitle,
+      amount: enteredAmount,
+      data: new Date(enteredDate),
+    }
+    console.log(expenseData)
   }
 
   return (
     <Card className='center'>
-      <form>
+      <form onSubmit={submitHandler}>
         <div>
           <label>Title</label>
           <input
@@ -45,7 +49,7 @@ const NewExpense = () => {
             }}
           />
         </div>
-        <button onClick={clickHandler}>Submit</button>
+        <button>Submit</button>
       </form>
     </Card>
   )
